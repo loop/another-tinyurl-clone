@@ -1,0 +1,455 @@
+/* Global Style */
+body {
+	background: #f8fcfe url(../images/bg.jpg) repeat-x;
+	color: #000;
+	font: 12px Arial, Tahoma, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+/* ClearFix */
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+/* Wrapper */
+#wrapper {
+	width: 750px;
+	margin: 0 auto;
+}
+.divider {
+	background: #deeae4;
+	width: 100%;
+	height: 1px;
+	margin: 10px 0;
+	padding: 0;
+	line-height: 0;
+	border: none;
+	overflow: hidden;
+}
+/* Header */
+#header {
+	width: 100%;
+	margin: 0 auto;
+}
+#header span#links {
+	margin-top: 4px;
+	color: #6b6b6b;
+	font: 16px Lucida Sans Unicode;
+	float: right;
+}
+#header span#links a {
+	color: #6182a1;
+	font: inherit;
+	text-decoration: none;
+}
+#index {
+	margin: 60px 0 0 0;
+}
+/* Shorten URL Form */
+#shorten_url {
+	background: #fff;
+	width: auto;
+	height: 34px;
+	padding: 7px;
+	border: 1px #e7e7e7 solid;
+}
+#shorten_url input#url {
+	background: #fff;
+	width: 500px;
+	margin-top: 10px;
+	color: #6182a1;
+	font: 14px Arial;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+	float: left;
+	outline: none;
+	border: none;
+	cursor: text;
+}
+#shorten_url input[type="button"], #shorten_url input[type="submit"] {
+	background: #ff9600;
+	width: 72px;
+	height: 35px;
+	margin-left: 6px;
+	color: #fff;
+	font: 14px Lucida Sans Unicode;
+	text-align: center;
+	float: right;
+	border: none;
+}
+/* Response Area */
+#response {
+	width: 100%;
+	display: none;
+}
+#response #error {
+	background: #f9efef url(../images/cross.png) no-repeat 9px 8px;
+	width: auto;
+	height: 13px;
+	margin-top: 10px;
+	padding: 9px 34px;
+	color: #494949;
+	font: 11px arial;
+	border: 1px #e9c6c6 solid;
+}
+#response #format {
+	background: #f6f6f6;
+	width: auto;
+	height: 33px;
+	margin-top: 10px;
+	border: 1px #e7e7e7 solid;
+}
+#response #format ul {
+	width: auto;
+	margin-top: 10px;
+}
+#response #format ul li {
+	float: left;
+}
+#response #format ul li.radio {
+	background: url(../images/radio.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-left: 34px;
+	display: block;
+	cursor: pointer;
+}
+#response #format ul li.radio.on {
+	background: url(../images/radio-on.png) no-repeat;
+}
+#response #format ul li.label {
+	margin-left: 2px;
+	padding-top: 1px;
+	color: #494949;
+	font: 11px Tahoma;
+	font-weight: bold;
+	cursor: default;
+}
+#response #link {
+	background: #fff url(../images/link-background.gif) repeat-x top;
+	width: 411px;
+	height: 16px;
+	margin-top: 10px;
+	padding: 14px;
+	color: #6182a1;
+	font: 14px arial;
+	text-align: center;
+	border: 1px #e7e7e7 solid;
+}
+#response #info {
+	width: auto;
+	margin-top: 14px;
+	float: left;
+}
+#response #info ul {
+	width: auto;
+	margin-left: 15px;
+}
+#response #info ul li {
+	color: #797979;
+	font: 11px arial;
+}
+#response #info ul li.bold {
+	color: #494949;
+	font-weight: bold;
+}
+#response #buttons {
+	width: auto;
+	margin-top: 10px;
+	float: right;
+}
+#response #buttons .button {
+	background: #fff url(../images/info-button-background.gif) repeat-x;
+	width: 107px;
+	height: 24px;
+	margin-left: 7px;
+	padding-top: 10px;
+	color: #494949;
+	font: 11px arial;
+	text-align: center;
+	display: block;
+	float: left;
+	cursor: pointer;
+	border: 1px #d1d1d1 solid;
+}
+#response #buttons .button img {
+	margin-right: 4px;
+	vertical-align: text-bottom;
+}
+#response #buttons .button:hover, #response #buttons .button.hover {
+	background: #fff url(../images/info-button-hover-background.gif) repeat-x;
+}
+/* Subpage */
+#subpage {
+	background: #fff;
+	padding: 15px;
+	margin-top: 60px;
+	width: auto;
+}
+#subpage h1 {
+	color: #6182a1;
+	font: 14px sans-serif;
+	font-weight: bold;
+}
+#subpage h2 {
+	margin: 10px 0 0 0;
+	color: #6182a1;
+	font: 12px sans-serif;
+	font-weight: bold;
+}
+#subpage p {
+	margin: 10px 0 0 0;
+	line-height: 20px;
+}
+#subpage ul {
+	margin: 10px 0 0 30px;
+}
+#subpage ul li {
+	padding: 3px;
+	list-style: square outside none;
+}
+#subpage p#links {
+	color: #6b6b6b;
+	font: 11.4px Lucida Sans Unicode;
+	text-align: center;
+	margin-bottom: -15px;
+}
+#subpage p#links a {
+	color: #6182a1;
+	font: inherit;
+	text-decoration: none;
+}
+/* Subpage 2 */
+#subpage2 {
+	background: #fff;
+	padding: 15px;
+	margin-top: 60px;
+	width: auto;
+}
+#subpage2 h1 {
+	color: #6182a1;
+	font: 14px sans-serif;
+	font-weight: bold;
+}
+#subpage2 p {
+	margin: 10px 0 0;
+	line-height: 165%;
+}
+#subpage2 ul {
+	margin: 10px 0 0 30px;
+}
+#subpage2 ul li {
+	padding: 3px;
+	list-style: square outside none;
+}
+#subpage2 #info {
+	background: #BDE5F8 url(../images/info.png) no-repeat 9px 8px;
+	width: auto;
+	height: 13px;
+	margin-top: 10px;
+	padding: 9px 34px;
+	color: #00529B;
+	font: 11px arial;
+	border: 1px #00529B solid;
+}
+#subpage2 table {
+	width: 90%;
+	border-top: 1px solid #e5eff8;
+	border-right: 1px solid #e5eff8;
+	margin: 1em auto;
+	border-collapse: collapse;
+}
+#subpage2 tr.odd td {
+	background: #f7fbff;
+}
+#subpage2 tr.odd .column1 {
+	background: #f4f9fe;
+}
+#subpage2 .column1 {
+	background: #f9fcfe;
+}
+#subpage2 td {
+	color: #678197;
+	border-bottom: 1px solid #e5eff8;
+	border-left: 1px solid #e5eff8;
+	padding: .3em 1em;
+	text-align: center;
+}
+#subpage2 th {
+	font-weight: normal;
+	color: #678197;
+	text-align: left;
+	border-bottom: 1px solid #e5eff8;
+	border-left: 1px solid #e5eff8;
+	padding: .3em 1em;
+}
+#subpage2 thead th {
+	background: #f4f9fe;
+	text-align: center;
+	font: bold 1.2em/2em inherit;
+	color: #66a3d3;
+}
+#subpage2 td a {
+	color:#678197;
+	text-decoration: none;
+	outline: none;
+}
+#subpage2 td a:hover {
+	color:#678197;
+	text-decoration: underline;
+}
+#subpage2 td img {
+	outline: none;
+	border: none;
+	vertical-align: middle;
+}
+#subpage2 p#links {
+	color: #6b6b6b;
+	font: 11.4px Lucida Sans Unicode;
+	text-align: center;
+}
+#subpage2 p#links a {
+	color: #6182a1;
+	font: inherit;
+	text-decoration: none;
+}
+/* View Page */
+#enlarge {
+	background: #f6f6f6;
+	width: 482px;
+	height: 14px;
+	padding: 8px;
+	margin: 0 auto 10px;
+	color: #494949;
+	font: 11px Tahoma;
+	font-weight: bold;
+	text-align: center;
+	border: 1px #e7e7e7 solid;
+}
+/* Login Page */
+#login {
+	background: #fff;
+	border: 1px solid #e7e7e7;
+	margin: 30px auto 1em;
+	text-align: left;
+	width: 400px;
+	padding: 2em;
+	margin-bottom: 30px;
+}
+#login .clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#login hr {
+	border: 0px;
+	background: none;
+	border-bottom: 1px dotted #aaa;
+	height: 0px;
+	margin: 1em 0;
+}
+#login label {
+	display: block;
+	margin-bottom: 4px;
+	color: #6182a1;
+}
+#login input[type=text], #login input[type=password] {
+	color: #333;
+	margin-bottom: 7px;
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 5px;
+	width: 95%;
+}
+#login input[type=submit], #login input[type=button] {
+	background: #eee;
+	border: 3px double #ccc;
+	padding: 2px;
+	font-size: 1em;
+	width: auto;
+	margin-right: 6px;
+}
+#login a {
+	color: #6182a1;
+	font: inherit;
+	text-decoration: none;
+}
+/* Footer */
+#footer {
+	width: auto;
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+#footer span#copyright {
+	margin-left: 0;
+	text-align: left;
+	float: left;
+}
+#footer span {
+	margin-bottom: 3px;
+	color: #555a53;
+	font: 11px arial;
+}
+#footer span.light {
+	color: #c6c6c6;
+}
+#footer span a {
+	color: #6182a1;
+	font: inherit;
+	text-decoration: none;
+}
+#footer span a:hover {
+	text-decoration: underline;
+}
+/* Global Styles */
+div#notReady {
+	background: #f9efef url(../images/cross.png) no-repeat 9px 8px;
+	width: auto;
+	height: 13px;
+	margin-top: 10px;
+	padding: 9px 34px;
+	color: #494949;
+	font: 11px arial;
+	border: 1px #e9c6c6 solid;
+	position: absolute;
+	top: 2px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+/* Captcha Styles */
+#captcha div {
+	display: inline;
+	float: left;
+}
+#logo {
+	background: url(../images/logo.png) no-repeat;
+	position: relative;
+	margin: 0 auto;
+	width: 244px;
+	height: 84px;
+	top: 50px;
+}
