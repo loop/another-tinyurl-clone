@@ -20,8 +20,8 @@ It is:
 - PHP cURL Extension
 - Apache mod_rewrite enabled
 
-----------------------------
 ## Instructions
+
 Please follow the instructions carefully and this script will work without a problem.
 
 1. Log on to your hosting panel and create a new database name, database user and password (Make sure you note these down).
