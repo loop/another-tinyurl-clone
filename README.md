@@ -1,4 +1,4 @@
-another-tinyurl-clone
+# another-tinyurl-clone
 =====================
 
 Another tinyurl clone.
@@ -13,7 +13,7 @@ It is:
 - Admin area to manage
 - Simple API
 
-Requirements:
+## Requirements
 
 - PHP 5+
 - mySQL 4+
@@ -21,7 +21,7 @@ Requirements:
 - Apache mod_rewrite enabled
 
 ----------------------------
-
+## Instructions
 Please follow the instructions carefully and this script will work without a problem.
 
 1. Log on to your hosting panel and create a new database name, database user and password (Make sure you note these down).
@@ -32,3 +32,7 @@ Please follow the instructions carefully and this script will work without a pro
 6. Add write permissions to screenshots (0777 or 0755).
 7. Add write permissions to cache/templates (0777 or 0755).
 8. Login using admin and admin123.
+
+## Open Source License
+
+Released under the MIT public license.
