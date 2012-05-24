@@ -13,6 +13,6 @@ function shorten_url()
 		urllink = $('#link').val();
 		clip.glue('copy');
 		clip.setText(urllink);
-		$('#submit').val('Spiral It!');
+		$('#submit').val('Shorten');
 	});
 }
