@@ -1,0 +1,22 @@
+## Turn on and setup apache rewrite ##
+RewriteEngine On
+Options +Followsymlinks
+RewriteBase /
+
+## Dissable directory indexing ##
+Options -Indexes
+
+## Remove trailing slash from end of uri ##
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule (.*) $1\.php [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Redirect to non.php extension
+RewriteCond %{THE_REQUEST} ^GET\ /([^/]+/)*[^.]+\.php(\?[^\ ]*)?\ HTTP/
+RewriteRule ^(([^/]+/)*[^.]+)\.php$  $1 [R=301,L] 
+
+## Rewrite Rules ##
+RewriteRule ^([0-9-a-z-A-Z-_]+)/?$ goto.php?id=$1 [L]
+RewriteRule ^account/(.*)$  $1.php [L]
